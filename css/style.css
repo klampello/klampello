@@ -1,1 +1,36 @@
-/* Denna fil skall innehålla din CSS kod */
+body{
+    display: grid;
+    margin: 0;
+    background-color: rgb(77, 161, 161);
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'hd hd hd hd'
+    'as ma ma se'
+    'as ma ma se';
+}
+
+header{
+    grid-area: hd;
+    background-color: aqua;
+}
+aside{
+    grid-area: as;
+    background-color: blue;
+}
+main{
+    grid-area: ma;
+    background-color: brown;
+    height: 100vh;
+}
+section{
+    grid-area: se;
+    background-color: cadetblue;
+    
+}
+
+
