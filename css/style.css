@@ -6,12 +6,19 @@ body{
 
 #container {
     display: grid;
+    height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 100px 100px 100px;
     grid-template-areas: 
-    'hd hd hd hd'
-    'as ma ma se'
-    'as ma ma se';
+        'hd hd hd hd'
+        'as ma ma se'
+        'as ma ma se'
+        'ft ft ft ft';
+}
+
+footer {
+    grid-area: ft;
+    background-color: darkgray;
 }
 
 header{
