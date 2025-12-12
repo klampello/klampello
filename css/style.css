@@ -8,10 +8,10 @@ body{
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 50px;
+    grid-template-rows: 1fr 50px 1fr 50px;
     grid-template-areas: 
         'hd hd hd hd'
-        'as ma ma se'
+        'as nv nv se'
         'as ma ma se'
         'ft ft ft ft';
 }
@@ -32,9 +32,21 @@ aside{
 main{
     grid-area: ma;
     background-color: brown;
-
+   
 }
+
 section{
     grid-area: se;
     background-color: cadetblue;
 }
+nav{
+    grid-area: nv;
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    
+}
+
+
