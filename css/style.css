@@ -1,18 +1,20 @@
 body{
     display: grid;
     margin: 0;
-    background-color: rgb(77, 161, 161);
+ 
 }
 
 #container {
     display: grid;
     height: 100vh;
+    row-gap: 10px;
+    column-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 50px 1fr 50px;
     grid-template-areas: 
         'hd hd hd hd'
         'as nv nv se'
-        'as ma ma se'
+        'as m1 m2 se'
         'ft ft ft ft';
 }
 
@@ -30,8 +32,14 @@ aside{
     background-color: blue;
     overflow: hidden;  
 }
-main{
-    grid-area: ma;
+main1{
+    grid-area: m1;
+    background-color: brown;
+   
+}
+
+main2{
+    grid-area: m2;
     background-color: brown;
    
 }
