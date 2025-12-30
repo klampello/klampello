@@ -1,6 +1,8 @@
 body{
     display: grid;
     margin: 0;
+    background-color: #a5b58d
+
  
 }
 
@@ -20,27 +22,36 @@ body{
 
 footer {
     grid-area: ft;
-    background-color: darkgray;
+    background-color: #b58b63;
 }
 
 header{
     grid-area: hd;
-    background-color: aqua;
+    background-color: #b58b63;
+    text-align: center;
+    
 }
 aside{
     grid-area: as;
     background-color: blue;
     overflow: hidden;  
+    border-radius: 0 10px 10px 0;
 }
 main1{
     grid-area: m1;
-    background-color: brown;
+    border-radius: 10px;
+      padding: 24px;
+      line-height: 1.618;
+      background-color: #f6efe8;
    
 }
 
 main2{
     grid-area: m2;
-    background-color: brown;
+    border-radius: 10px;
+    padding: 24px;
+    line-height: 1.618;
+    background-color: #f6efe8;
    
 }
 
@@ -48,15 +59,16 @@ section{
     grid-area: se;
     background-color: cadetblue;
     overflow: hidden;  
+    border-radius: 10px 0 0 10px;
 }
 nav{
     grid-area: nv;
-    background-color: blanchedalmond;
+    background-color: #f6efe8;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 300px;
-    
+    border-radius: 10px;
 }
 
 
