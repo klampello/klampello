@@ -22,7 +22,7 @@ body{
 
 footer {
     grid-area: ft;
-    background-color: #b58b63;
+    background-color:  #f6efe8;
 }
 
 header{
@@ -33,7 +33,6 @@ header{
 }
 aside{
     grid-area: as;
-    background-color: blue;
     overflow: hidden;  
     border-radius: 0 10px 10px 0;
 }
@@ -57,7 +56,6 @@ main2{
 
 section{
     grid-area: se;
-    background-color: cadetblue;
     overflow: hidden;  
     border-radius: 10px 0 0 10px;
 }
