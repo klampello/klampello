@@ -146,6 +146,7 @@ body {
 .menu-page header {
     grid-area: header;
     background-color: #b58b63;
+    text-align: center;
 }
 
 .menu-page nav {
@@ -187,7 +188,27 @@ body {
     gap: 175px; 
 }
 
+.menu-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    line-height: 1.618;
+}
 
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+---KONTAKT---
 
 
 
