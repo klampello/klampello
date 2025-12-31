@@ -1,7 +1,7 @@
 
 ---MAIN---
 
-body.main-page{
+body {
     display: grid;
     margin: 0;
     background-color: #a5b58d;
@@ -122,9 +122,12 @@ body.main-page{
 
 ---MENU---
 
-body.menu-page {
+.main-page body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #a5b58d;
+
+
 }
 
 .menu-page #container {
@@ -142,15 +145,16 @@ body.menu-page {
 
 .menu-page header {
     grid-area: header;
-    background-color: red;
+    background-color: #b58b63;
 }
 
 .menu-page nav {
     grid-area: nav;
-    background-color: blue;
+    background-color: #f6efe8;
     display: flex;
     justify-content: center; 
-    align-items: center;     
+    align-items: center;   
+    
 }
 
 .menu-page main {
@@ -161,20 +165,27 @@ body.menu-page {
 }
 
 .menu-item {
-    background-color: green;
+    background-color: #f6efe8;
 }
 
 .menu-page footer {
     grid-area: footer;
-    background-color: yellow;
+    background-color: #f6efe8;
 }
 
 .menu-page nav a {
-    padding: 4px 8px;
-    font-size: 14px;    
+    padding: 4px 24px;
+    font-size: 24px;    
     border-radius: 5px; 
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
+.menu-page .nav-list {
+    display: flex;
+    justify-content: center; 
+    gap: 175px; 
+}
 
 
 
