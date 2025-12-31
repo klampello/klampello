@@ -2,10 +2,8 @@
 ---MAIN---
 
 body {
-    display: grid;
     margin: 0;
     background-color: #a5b58d;
-
 }
 
 
@@ -39,22 +37,21 @@ body {
     overflow: hidden;  
     border-radius: 0 10px 10px 0;
 }
-.main-page main1{
+
+.main-page .main1 {
     grid-area: m1;
     border-radius: 10px;
-      padding: 24px;
-      line-height: 1.618;
-      background-color: #f6efe8;
-   
+    padding: 24px;
+    line-height: 1.618;
+    background-color: #f6efe8;
 }
 
-.main-page main2{
+.main-page .main2 {
     grid-area: m2;
     border-radius: 10px;
     padding: 24px;
     line-height: 1.618;
     background-color: #f6efe8;
-   
 }
 
 .main-page section{
@@ -207,9 +204,45 @@ body {
     margin: 0 auto;
 }
 
-
 ---KONTAKT---
 
 
+* { box-sizing: border-box; }
 
+
+.kontakt-page {
+    display: grid;
+    height: 100vh;
+    gap: 10px;
+    background-color: #a5b58d;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    grid-template-rows: 80px 50px 1fr 60px;
+    grid-template-columns: 120px 1fr 1fr 120px;
+    grid-template-areas: 
+        "header header header header"
+        "leftnav nav nav rightnav"
+        "leftnav main sidebar rightnav"
+        "footer footer footer footer";
+}
+
+
+.kontakt-page header, .kontakt-page nav, .kontakt-page main, .kontakt-page aside, .kontakt-page footer, .kontakt-page .side-pillar {
+    background-color: #f6efe8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+.kontakt-page header { grid-area: header; background-color: #e3f2fd; }
+.kontakt-page nav    { grid-area: nav;    background-color: #fff9c4; }
+.kontakt-page footer { grid-area: footer; background-color: #eeeeee; }
+.kontakt-page main   { grid-area: main; }
+.kontakt-page aside  { grid-area: sidebar; }
+.kontakt-page .left-col  { grid-area: leftnav; background-color: #f1f1f1; }
+.kontakt-page .right-col { grid-area: rightnav; background-color: #f1f1f1; }
+
+.about-page main { background-color: #dcedc8; }
 
