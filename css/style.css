@@ -218,7 +218,7 @@ body {
     padding: 10px;
     font-family: Arial, sans-serif;
     grid-template-rows: 80px 50px 1fr 60px;
-    grid-template-columns: 120px 1fr 1fr 120px;
+    grid-template-columns: 180px 1fr 1fr 180px;
     grid-template-areas: 
         "header header header header"
         "leftnav nav nav rightnav"
@@ -231,18 +231,49 @@ body {
     background-color: #f6efe8;
     display: flex;
     align-items: center;
+
+
     justify-content: center;
+
     font-weight: bold;
 }
 
 
-.kontakt-page header { grid-area: header; background-color: #e3f2fd; }
-.kontakt-page nav    { grid-area: nav;    background-color: #fff9c4; }
-.kontakt-page footer { grid-area: footer; background-color: #eeeeee; }
+.kontakt-page header { grid-area: header; background-color: #f6efe8; }
+.kontakt-page nav    { grid-area: nav;    background-color: #f6efe8; }
+.kontakt-page footer { grid-area: footer; background-color: #f6efe8; }
+
 .kontakt-page main   { grid-area: main; }
 .kontakt-page aside  { grid-area: sidebar; }
-.kontakt-page .left-col  { grid-area: leftnav; background-color: #f1f1f1; }
-.kontakt-page .right-col { grid-area: rightnav; background-color: #f1f1f1; }
 
-.about-page main { background-color: #dcedc8; }
 
+.kontakt-page .left-col  { grid-area: leftnav; background-color: #f6efe8; }
+
+.kontakt-page .right-col { grid-area: rightnav; background-color: #f6efe8; }
+
+.about-page main { background-color: #f6efe8; }
+
+.kontakt-page .left-col img {
+    width: 180px;  
+    height: 500px; 
+}
+
+.kontakt-page nav {
+    display: flex;
+    gap: 450px;
+    gap: min(450px, 20vw);
+}
+
+.kontakt-page header {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    justify-content: center; 
+    text-align: center;     
+}
+
+.kontakt-page header h1 {
+    font-size: 50px;         
+    font-weight: bold;
+    margin: 0;               
+}
