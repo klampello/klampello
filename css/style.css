@@ -227,20 +227,44 @@ body {
 }
 
 
-.kontakt-page header, .kontakt-page nav, .kontakt-page main, .kontakt-page aside, .kontakt-page footer, .kontakt-page .side-pillar {
+.kontakt-page nav, .kontakt-page main, .kontakt-page aside, .kontakt-page footer, .kontakt-page .side-pillar {
     background-color: #f6efe8;
     display: flex;
     align-items: center;
-
-
+    
     justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 1.618;
 
     font-weight: bold;
 }
 
+.kontakt-page header {
 
-.kontakt-page header { grid-area: header; background-color: #f6efe8; }
-.kontakt-page nav    { grid-area: nav;    background-color: #f6efe8; }
+
+    font-size: 64px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 1.618;
+}
+
+
+.kontakt-page header { 
+    grid-area: header; background-color: #f6efe8;
+
+ }
+.kontakt-page nav    { 
+    grid-area: nav;    background-color: #f6efe8;
+    display: flex;
+    gap: 450px;
+    gap: min(450px, 20vw);
+
+}
 .kontakt-page footer { grid-area: footer; background-color: #f6efe8; }
 
 .kontakt-page main   { grid-area: main; }
@@ -256,24 +280,10 @@ body {
 .kontakt-page .left-col img {
     width: 180px;  
     height: 500px; 
+
 }
 
-.kontakt-page nav {
-    display: flex;
-    gap: 450px;
-    gap: min(450px, 20vw);
-}
 
-.kontakt-page header {
-    display: flex;
-    flex-direction: column;  
-    align-items: center;     
-    justify-content: center; 
-    text-align: center;     
-}
 
-.kontakt-page header h1 {
-    font-size: 50px;         
-    font-weight: bold;
-    margin: 0;               
-}
+
+
